@@ -11,7 +11,7 @@ html {
 .page {
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed', Helvetica, sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   inline-size: 1200px;
@@ -53,19 +53,21 @@ html {
   grid-template-columns: repeat(2, 1fr);
   align-items: end;
   gap: 30px;
-  width: 1140px;
+  max-width: 1140px;
+  width: 100%;
   margin: 135px 30px 0; 
 }
 
 .result__video-container {
   position: relative; 
-  width: 711px;
+  max-width: 711px;
+  width: 100%;
   margin-bottom: 10px;
 }
 
 .result__video {
   display: block;
-  min-width:100%;
+  width:100%;
 }
 
 .search-form {
@@ -81,7 +83,7 @@ html {
 .search-form__fieldset-title {
   padding-bottom: 5px;
   color: #FFF;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', Helvetica, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -141,7 +143,7 @@ html {
   outline: none;
 }
 
-input[type="checkbox"] + span {
+.search-form__pseudo-checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,7 +173,7 @@ input[type="checkbox"] + span {
   height: 34px;
   border: 1px solid #fff;
   color: #FFF;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', Helvetica, sans-serif;
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
@@ -207,7 +209,7 @@ input[type="checkbox"] + span {
 
 .title {
   color: #FFF;
-  font-family: Oswald;
+  font-family: Oswald, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 75px;
   font-style: normal;
@@ -217,7 +219,7 @@ input[type="checkbox"] + span {
 
 .content__accent {
   color: #545050;
-  font-family: Oswald;
+  font-family: Oswald, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 75px;
   font-style: normal;
@@ -229,6 +231,7 @@ input[type="checkbox"] + span {
   position: relative;
   height: 320px; 
   overflow: auto;
+  overflow-x: hidden;
 }
 
 .content__list-item {
@@ -262,7 +265,7 @@ input[type="checkbox"] + span {
 
 .content__video-card {
   display: grid;
-  grid-template-columns: 200px 194px;
+  grid-template-columns: 200px 180px;
 }
 
 .content__video-card:active {
@@ -277,7 +280,7 @@ input[type="checkbox"] + span {
 .content__video-card-title {
   margin-bottom: 6px;
   color: #FFF;
-  font-family: Oswald;
+  font-family: Oswald, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 30px;
   font-style: normal;
@@ -287,7 +290,7 @@ input[type="checkbox"] + span {
 
 .content__video-card-description {
   color: #FFF;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', Helvetica, sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
