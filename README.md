@@ -1,1 +1,1 @@
-https://github.com/samodel/posmotri_v_okno
+https://github.com/samodel/posmotri-v-okno-fd.git
